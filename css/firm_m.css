@@ -1,0 +1,75 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+body
+{
+	
+}
+
+#firm_logo_m{
+	display: block;
+	width: 400px;
+	height: 400px;
+	margin-bottom: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 15px;
+	
+	
+}
+
+#short_text_m{
+	display: block;
+	font-family: Calibri;
+	font-size: 20px;
+	color: #A9A9A9;
+	width: 95%;
+	margin: auto;
+	white-space: pre-wrap;      /* CSS3 */   
+    white-space: -moz-pre-wrap; /* Firefox */    
+    white-space: -pre-wrap;     /* Opera <7 */   
+    white-space: -o-pre-wrap;   /* Opera 7 */    
+    word-wrap: break-word;      /* IE */
+}
+#weiter{
+	background-color: #FFFFFF;
+	color: #C1D00F;
+	font-family: Calibri;
+	font-size: 20px;
+	outline: none;
+	border: none;
+}
+
+#footer_m
+{
+	display: block;
+	width: 95%;
+	background-color: #323232;
+	margin: 15px auto;
+	padding-bottom: 15px;
+}
+
+#firm_name_m{
+	display: block;
+	color: #FFFFFF;
+	font-family: Calibri;
+	font-size: 30px;
+	padding: 10px 0px 2px 20px;
+}
+#firm_address_m{
+	display: block;
+	color: #FFFFFF;
+	font-family: Calibri;
+	font-size: 30px;
+	padding: 0px 0px 2px 20px;
+}
+#firm_place_m{
+	display: block;
+	color: #FFFFFF;
+	font-family: Calibri;
+	font-size: 30px;
+	padding: 0px 0px 2px 20px;
+	
+}
+

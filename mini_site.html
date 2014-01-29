@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title> Mini site </title>
+	<link rel="stylesheet" href="css/mini_site.css">
+	<script src="localguide_script.js"> </script>
+	<script src="js/jquery-1.9.1.js"></script>
+	<script src="js/jquery-ui-1.10.3.custom.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+	<script type="text/javascript">
+	var geocoder;
+	var map;
+	
+	function codeAddress() {
+		geocoder = new google.maps.Geocoder();
+	  //var address = document.getElementById('address').value;
+	   var address = "Seeblickstrasse,Arosa,Switzerland";
+	 
+	   geocoder.geocode( { 'address': address}, function(results, status) {
+		if (status == google.maps.GeocoderStatus.OK) {
+		 longLatAddress= results[0].geometry.location;
+		  return longLatAddress;
+		} else {
+		  alert('Geocode was not successful for the following reason: ' + status);
+		}
+	  });
+	}
+    </script>
+
+</head>
+<body onload="codeAddress();">
+	<div id="solid_line"></div>
+	<div id="site_header">
+		<button id="button_back"></button>
+		<button id="button_menu"></button>
+		<div id="firm_name">ARGOSA BERBAHNEN AG</div>
+		
+	</div>
+	<script type="text/javascript">
+	$('#button_back').click(function (){
+		window.close();
+	});
+	</script>
+	<script type="text/javascript">
+		$("#button_menu").click(function() {
+				var menu = $("#side_menu_m");
+				if ($(menu).is(":visible")) {	
+					$(menu).animate({width: 0}, 500, function() {$(menu).hide();});
+				} else {
+					$(menu).show().animate({width: 300}, 500); 
+				}
+		});	
+	</script>
+	<div id="side_menu_m">
+		<ul>
+			<li>NEWS</li>
+			<li>SHOP</li>
+			<li>HOTLINE</li>
+			<li>PRODUCTS</li>
+			<li id="logout">logout</li>
+		</ul>
+	</div>
+	<div id="informations">
+		<script type="text/javascript">
+			function map(){
+
+				 var isMobile = {
+					Android: function() {
+						return navigator.userAgent.match(/Android/i);
+					},
+					BlackBerry: function() {
+						return navigator.userAgent.match(/BlackBerry/i);
+					},
+					iOS: function() {
+						return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+					},
+					Opera: function() {
+						return navigator.userAgent.match(/Opera Mini/i);
+					},
+					Windows: function() {
+						return navigator.userAgent.match(/IEMobile/i);
+					},
+					any: function() {
+						return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+					}
+				};
+		
+			
+				if(isMobile.iOS() )
+				{
+					alert('iiiiopppppssssss');
+					//location.href = $(this).data('http://maps.apple.com/?q=Arosa,Switzerland;');
+					//return "http://maps.apple.com/?q=Arosa,Switzerland";
+					//$('selector').attr('href','http://maps.apple.com/?q=Arosa,Switzerland');
+					var addressForIosLat = longLatAddress.lat();
+					var addressForIosLong = longLatAddress.lng();
+				
+					location.href='http://maps.apple.com/?q='+addressForIosLat+','+addressForIosLong;
+				}else
+				{
+					alert('androidddd');
+					//location.href = $(this).data('https://maps.google.com/?q=Arosa,Switzerland;'); 
+					//$(this).attr('href','https://maps.google.com/?q=Arosa,Switzerland');
+					
+					var addressForIosLat = longLatAddress.lat();
+					var addressForIosLong = longLatAddress.lng();
+					
+					//alert('http://maps.apple.com/?q='+addressForIosLat+','+addressForIosLong);
+					location.href='https://maps.google.com/?q= Seeblickstrasse,Arosa,Switzerland';
+				
+				} 
+				
+			}
+		</script>
+		
+		<div id="location_info">
+			<a id="arrow_map" href="javascript:map()" ><image id="arrow" src="images/yellow_arrow_small.png"></image></a>
+			<div id="location_details_address">Seeblickstr. 15</div>
+			<div id="location_details_city">7050 Arosa</div>
+		</div>
+		<div id="telefon_info">
+			<a href="tel:0813788484"><image id="telefon" src="images/telephone_symbol.png"></image></a>
+			<div id="telefon_details"> Tel. 081 378 84 84</div>
+			<div id="fax_details">Fax. 081 378 84 84</div>
+		</div>
+		<div id="mail_info">
+			<a href='mailto:info@arosabergbahnen.ch'><image id="kontakt" src="images/dialog_bubble.png"></image></a>
+			<div id="mail_details">info@arosabergbahnen.ch</div>
+			<div id="web_details">http://www.arosabergbahnen.ch</div>
+		</div>
+	</div>
+	<div id="gray_line"></div>
+	<div id="filds">
+		<!-- <div id="address">
+			<image id="address_image" src="images/address_book.png"></image>
+			<div id="address_more">ADRESSE</div>
+			<image id="black_arrow" src="images/black_arrow_foward.png"></image>
+		</div> -->
+		<div id="firmendaten">
+			<image id="firmendaten_image" src="images/papir_symbol.png"></image>
+			<div id="firmendaten_more">FIRMENDATEN</div>
+			<image id="black_arrow" src="images/black_arrow_foward.png"></image>
+		</div>
+		<div id="details">
+			<image id="details_image" src="images/threelines_yellow.png"></image>
+			<div id="details_more">DETAILS</div>
+			<image id="black_arrow" src="images/black_arrow_foward.png"></image>
+		</div>
+		<div id="kontaktieren">
+			<image id="kontaktieren_image" src="images/dialog_bubble.png"></image>
+			<div id="kontaktieren_more">KONTAKTIEREN</div>
+			<image id="black_arrow" src="images/black_arrow_foward.png"></image>
+		</div>
+		<div id="karte">
+			<image id="karte_image" src="images/yellow_arrow_small.png"></image>
+			<div id="karte_more">KARTE</div>
+			<image id="black_arrow" src="images/black_arrow_foward.png"></image>
+		</div>
+	</div>
+	<div class="footer" id="footer">
+			<div id="device_div_m"><a href="#" id="moblie_m">Mobile |</a> <a href="#" id="desktop_m">Desktop |</a> <a href="#" id="tablet_m">Tablet</a></div>
+			<hr />
+			<div id="impresum_div_m"> <a href="#" id="impresum_m">Impresum </a> <a href="#" id="swissguide_m">swissguide.ch </a> </div>
+	</div>
+		
+</body>

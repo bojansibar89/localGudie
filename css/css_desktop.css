@@ -1,0 +1,299 @@
+
+*{
+	padding: 0xp;
+	margin: 0px;
+ }
+ 
+body{
+	
+	min-width: 1300px;
+	white-space: nowrap;
+	overflow: hidden;	
+ }
+ 
+#div_mobile
+{
+	display: none;
+}
+ 
+ #solid_line_d{
+	background: #C1D00F;
+	width: 100%;
+	height: 30px;
+	
+ }
+ 
+#menu_d {
+    height: 600px;
+    width: 0px;
+    border: 1px solid #A9A9A9;
+	background: #A9A9A9;
+    display: none;
+	float: right;
+	position: relative;
+	top: 40px;
+	z-index: 1000;
+}
+#openMenu_d{
+	float: right;
+	position: relative;
+	top: 40px;
+	z-index: 1000;
+	border-radius: 0px;
+	background-color: #A9A9A9;
+	background-image: url(../images/threelines_d_jquery.png);
+	border: 1px solid #A9A9A9;
+	outline:none;
+	height: 50px;
+	width:50px;
+	
+}
+
+#border_d{
+	border: 1px solid #A9A9A9;
+	height: 600px;
+	width: 5px;
+	float: right;
+	background: #A9A9A9;
+	position: relative;
+	top: 40px;
+	z-index: 1000;
+}
+
+#edittext_div_d
+{
+	
+	width:300px;
+	
+	position: absolute;
+	top: 40px;
+	left: 0px;
+	
+	
+}
+#search_desktop_d
+{
+	width: 250px;
+	margin-left: 20px;
+	margin-right: 5px;
+}
+#div_flash_d
+{
+	position: relative;
+	
+}
+#canvas_div_d
+{
+
+	display: inline-block;
+	margin: 30px auto;
+
+}
+
+#casnvas_text_d{
+	position: absolute;
+    top: 0; bottom:0; left: 0; right:0; 
+    margin: 30px auto;
+	
+}
+#anmelden_and_sprache_d
+{
+	
+	width:200px;
+	position:relative;
+	left: 80%;
+	top:-20px;
+	
+}
+
+#anmelden_d
+{
+	color: #A9A9A9;
+	font-size: 20px;
+}
+
+#sprache_d
+{
+	color: #A9A9A9;
+	font-size: 20px;
+}
+#link_list_div_div_d
+{
+	background: #A9A9A9;
+	z-index: 1000;
+	
+}
+#side_menu_d{
+	color: #323232;
+	padding: 10px 10px 10px 0px;
+	font-style: bold;
+	width: 90%;
+	z-index: 1000;
+	margin-top: 40px;
+	margin-left: 50px;
+}
+
+#email_d
+{
+	width: 80%;
+
+	background: #323232;
+	padding: 10px;
+	margin-bottom: 10px;
+	margin-left: 50px;
+	outline:none;
+}
+
+#input_email_d
+{
+	display: -webkit-box;
+	-webkit-box-flex: 1;
+	
+	display:-moz-box;
+	-moz-box-flex:1;
+	
+	height:100%;
+	color: #FFFFFF;
+	background: #323232;
+	font: 15px Tahoma;
+	padding: 5px;
+	margin-top: 0px;
+	outline:none;
+	border: 1px solid #323232;
+	
+}
+
+#space_pass_and_email_d
+{
+	width: 100%;
+	height: 5px;
+	background: #A9A9A9;
+}
+
+#input_pass_d
+{
+	display: -webkit-box;
+	-webkit-box-flex: 1;
+	
+	display:-moz-box;
+	-moz-box-flex:1;
+	
+	height:100%;
+	color: #FFFFFF;
+	background: #323232;
+	font: 15px Tahoma;
+	padding: 5px;
+	margin-top: 0px;
+	border: 1px solid #323232;
+	outline:none;
+	
+}
+
+#pass_d
+{
+	width: 80%;
+	
+	background: #323232;
+	padding: 10px;
+	margin-top: 5px;
+	margin-left: 50px;
+}
+
+#suche_d
+{
+	color: #323232;
+	padding: 10px 0px 0px 0px;
+	font-style: bold;
+	margin-left: 50px;
+
+}
+
+#erweiterte_div_d
+{
+	
+	text-decoration: none;
+	margin-left: 50px;
+	
+}
+
+#erweiterte_d
+{
+	
+	color: #FFFFFF;
+	text-decoration: none;
+	
+}
+
+#italy_d
+{
+	
+	color: #FFFFFF;
+	text-decoration: none;
+	margin-left: 50px;
+}
+
+#french_d
+{
+	
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+#english_d
+{
+	
+	color: #FFFFFF;
+	text-decoration: none;
+
+}
+
+
+#german_d
+{
+	
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+#error_message_d {
+	border: none;
+	margin-left: 50px;
+	margin-top: 10px;
+	
+}
+
+input.login_button {
+	border-top: 1px solid #919ea6;
+	background: #bababa;
+	background: -webkit-gradient(linear, left top, left bottom, from(#0c0d0d), to(#bababa));
+	background: -webkit-linear-gradient(top, #0c0d0d, #bababa);
+	background: -moz-linear-gradient(top, #0c0d0d, #bababa);
+	background: -ms-linear-gradient(top, #0c0d0d, #bababa);
+	background: -o-linear-gradient(top, #0c0d0d, #bababa);
+	padding: 7px 14px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	-webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+	-moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+	box-shadow: rgba(0,0,0,1) 0 1px 0;
+	text-shadow: rgba(0,0,0,.4) 0 1px 0;
+	color: white;
+	font-size: 15px;
+	font-family: 'Lucida Grande', Helvetica, Arial, Sans-Serif;
+	text-decoration: none;
+	vertical-align: middle;
+	margin-top: 10px;
+	margin-left: 50px;
+}
+
+input.login_button:hover {
+	border-top-color: #627d59;
+	background: #627d59;
+	color: #ccc;
+}
+
+input.login_button:active {
+   border-top-color: #b1bfc9;
+   background: #b1bfc9;
+   }

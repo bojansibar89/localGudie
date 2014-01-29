@@ -1,0 +1,435 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+
+#solid_line{
+	
+	width: 100%;
+	height: 30px;
+	background: #C1D00F;
+}
+
+#site_header{
+	display: block;
+	width: 100%;
+	background: #A9A9A9;
+	height: 100px;
+	text-align: center;
+	
+}
+
+#button_back{
+	position: relative;
+	top: 25px;
+	float: left;
+	z-index: 1000;
+	border-radius: 0px;
+	background-color: #323232;
+	background-image: url(../images/back_arrow_old.png);
+	border:1px solid #323232;
+	outline:none;
+	height: 50px;
+	width:50px;
+}
+#button_menu{
+	float: right;
+	position: relative;
+	top:25px;
+	z-index: 1000;
+	border-radius: 0px;
+	background-color: #323232;
+	background-image: url(../images/threelines_d_jquery.png);
+	border: 1px solid #323232;
+	outline:none;
+	height: 50px;
+	width:50px;
+}
+#firm_name{`
+	display: block;
+	margin: auto;
+	color: #000000;
+	width: 350px;
+	font-family: Calibri;
+	font-size: 40px;
+}
+
+#informations{
+	height: 400px;
+	margin-left: 25px;
+}
+
+#location_info{
+	height: 100px;
+	margin-top: 25px;
+}
+
+#arrow{
+	display: block;
+	border: 2px solid #C1D00F;
+	width: 98px;
+	height: 98px;
+	float: left;
+	
+}
+
+#location_details_address{
+	position:absolute;
+	margin-left: 140px;
+	margin-top: 10px;
+	font-family: Calibry;
+	font-size: 30px;
+	padding: 2px;
+	
+}
+
+#location_details_city{
+	position:absolute;
+	margin-top: 50px;
+	margin-left: 140px;
+	font-family: Calibry;
+	font-size: 30px;
+	padding: 2px;
+}
+
+#telefon_info{
+	height: 100px;
+	margin-top: 10px;
+}
+
+#telefon{
+	display: block;
+	width: 98px;
+	height: 98px;
+	border: 2px solid #C1D00F;
+	float: left;
+}
+
+#telefon_details{
+	position:absolute;
+	margin-left: 140px;
+	margin-top: 10px;
+	font-family: Calibry;
+	font-size: 30px;
+	padding: 2px;
+	
+}
+
+#fax_details{
+	position:absolute;
+	margin-top: 50px;
+	margin-left: 140px;
+	font-family: Calibry;
+	font-size: 30px;
+	padding: 2px;
+}
+
+
+
+#mail_info{
+	height: 100px;
+	margin-top: 10px;
+}
+
+#kontakt{
+	display: block;
+	float: left;
+	border: 2px solid #C1D00F;
+	width: 98px;
+	height: 98px;
+}
+
+#mail_details{
+	position:absolute;
+	margin-left: 140px;
+	margin-top: 10px;
+	font-family: Calibry;
+	font-size: 30px;
+	padding: 2px;
+	
+}
+
+#web_details{
+	position:absolute;
+	margin-top: 50px;
+	margin-left: 140px;
+	font-family: Calibry;
+	font-size: 30px;
+	padding: 2px;
+}
+
+#gray_line{
+	width: 100%;
+	height: 30px;
+	background: #A9A9A9;
+}
+
+#filds{
+	
+}
+
+#address{
+	
+	height: 100px;
+	margin-top: 10px;
+	margin-left: 25px;
+}
+
+#address_image{
+	display: block;
+	width: 98px;
+	height: 98px;
+	float: left;
+}
+#address_more{
+	display: table-cell;
+	float: left;
+	height: 50px;
+	vertical-align:center;
+	font-family: Calibry;
+	font-size: 35px;
+	padding: 2px;
+	margin-top: 25px;
+	margin-left: 25px;
+}
+#black_arrow{
+	display: block;
+	float: right;
+	width: 50px;
+	height: 50px;
+	margin-top: 25px;
+	margin-right: 25px;
+}
+
+#firmendaten{
+	
+	height: 100px;
+	margin-top: 10px;
+	margin-left: 25px;
+}
+
+#firmendaten_image{
+	display: block;
+	width: 98px;
+	height: 98px;
+	float: left;
+}
+#firmendaten_more{
+	display: table-cell;
+	float: left;
+	height: 50px;
+	vertical-align:center;
+	font-family: Calibry;
+	font-size: 35px;
+	padding: 2px;
+	margin-top: 25px;
+	margin-left: 25px;
+}
+#black_arrow{
+	display: block;
+	float: right;
+	width: 50px;
+	height: 50px;
+	margin-top: 25px;
+	margin-right: 25px;
+}
+
+#details{
+	
+	height: 100px;
+	margin-top: 10px;
+	margin-left: 25px;
+}
+
+#details_image{
+	display: block;
+	width: 98px;
+	height: 98px;
+	float: left;
+}
+#details_more{
+	display: table-cell;
+	float: left;
+	height: 50px;
+	vertical-align:center;
+	font-family: Calibry;
+	font-size: 35px;
+	padding: 2px;
+	margin-top: 25px;
+	margin-left: 25px;
+}
+#black_arrow{
+	display: block;
+	float: right;
+	width: 50px;
+	height: 50px;
+	margin-top: 25px;
+	margin-right: 25px;
+}
+
+
+
+#kontaktieren{
+	
+	height: 100px;
+	margin-top: 10px;
+	margin-left: 25px;
+}
+
+#kontaktieren_image{
+	display: block;
+	width: 98px;
+	height: 98px;
+	float: left;
+}
+#kontaktieren_more{
+	display: table-cell;
+	float: left;
+	height: 50px;
+	vertical-align:center;
+	font-family: Calibry;
+	font-size: 35px;
+	padding: 2px;
+	margin-top: 25px;
+	margin-left: 25px;
+}
+#black_arrow{
+	display: block;
+	float: right;
+	width: 50px;
+	height: 50px;
+	margin-top: 25px;
+	margin-right: 25px;
+}
+
+#karte{
+	
+	height: 100px;
+	margin-top: 10px;
+	margin-left: 25px;
+}
+
+#karte_image{
+	display: block;
+	width: 98px;
+	height: 98px;
+	float: left;
+}
+#karte_more{
+	display: table-cell;
+	float: left;
+	height: 50px;
+	vertical-align:center;
+	font-family: Calibry;
+	font-size: 35px;
+	padding: 2px;
+	margin-top: 25px;
+	margin-left: 25px;
+}
+#black_arrow{
+	display: block;
+	float: right;
+	width: 50px;
+	height: 50px;
+	margin-top: 25px;
+	margin-right: 25px;
+}
+
+/* FOOTER*/
+#footer{
+	position: absolute;
+	top: 1450px;
+	width: 100%;
+}
+
+#device_div_m{
+	margin-left: 50px;
+}
+#moblie_m,#desktop_m, #tablet_m{
+
+	padding: 10px;
+	font-family: Calabria;
+	font-size: 20px;
+	color: black;
+	text-decoration: none;
+}
+
+#device_div_m, #impresum_div_m{
+	margin-left: 50px;
+}
+
+#device_div_m{
+	margin-bottom: 10px;
+}
+
+#impresum_div_m{
+	display: block;
+	margin-top: 10px;
+}
+
+#moblie_m,#desktop_m, #tablet_m, #swissguide_m, #impresum_m{
+	
+	padding: 10px;
+	font-family: Calabria;
+	font-size: 20px;
+	color: black;
+	text-decoration: none;
+}
+#impresum_m{
+	float: left;
+}
+
+#swissguide_m{
+	
+	float: right;
+	margin-right: 50px;
+}
+
+/* slide menu */
+ul {
+	list-style-type: none;
+	
+}
+li{
+	margin-left: 10px;
+	color: #A9A9A9;
+	font-family: Calabria;
+	font-size: 20px;
+	padding: 5px; 
+	border-bottom: 2px solid white; 
+}
+li:hover{
+	color: #C1D00F;
+}
+li:active{
+	color: #C1D00F;
+}
+#logout{
+	border: none;
+	font-style: italic;
+	position:absolute;
+	bottom:0;
+}
+
+#side_menu_m {
+    height: 390px;
+    width: 0px;
+    border-top: 2px solid #323232;
+	border-left: 2px solid #323232;
+	border-right: 10px solid #323232;
+	background: #323232;
+    display: none;
+	float: right;
+	position: relative;
+	/*left: 900px;*/
+	top: 0px;
+	z-index: 1000;
+}
+
+
+
+
+
+
+
+

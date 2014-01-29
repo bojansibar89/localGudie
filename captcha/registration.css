@@ -1,0 +1,17 @@
+*{
+	font-family: Calabria;
+	font-size: 20px;
+}
+
+fieldset dt {
+	float: left;	
+	width: 40%;
+	text-align: left;
+	display: block;
+}
+
+fieldset dd {
+	margin-left: 41%;
+	vertical-align: top;
+	margin-bottom: 3px;
+}

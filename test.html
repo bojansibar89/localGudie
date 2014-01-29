@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title> Mein Konto </title>
+	<link rel="stylesheet" href="css/jquery-ui-1.10.3.custom.css">
+	<script src="js/jquery-1.9.1.js"></script>
+	<script src="js/jquery-ui-1.10.3.custom.js"></script>
+	<link rel="stylesheet" href="css/test.css">
+	<link href="lib/jquery-filestyle/css/jquery-filestyle.min.css" rel="stylesheet" />
+	<!-- <script src="geolocation.js"> </script>
+	<script src="js_mobile.js"> </script> -->
+	<script>
+	  $(function() {
+		$("#accordion").accordion({
+			active: false,
+			collapsible: true,
+			heightStyle: "content",
+			icons: { "header": "ui-icon-circle-triangle-e", "activeHeader": "ui-icon-circle-triangle-s"},
+			header: ".accordion_header"
+		});
+		$( "#datepicker_von" ).datepicker();
+		$( "#datepicker_bis" ).datepicker();
+	  });
+	</script>
+</head>
+<body onLoad="">
+	<header>
+		<div id="header_div">
+			
+				<button id="button_back" onclick="history.go(-1);">
+				</button>
+			<button id="button_three_lines">
+				</button>
+			<div id="images_div">
+				<div id="header_image_div_local_guide">
+					<image src="images/localguide_3.png" id="image_localguide">
+					</image>
+				</div>
+				<div id="header_image_div_main_conto">
+					<image src="images/mein konto_3.png" id="image_main_conto" >
+					</image>
+				</div>
+			</div>
+			
+				
+			
+		</div>
+	<header>
+	<section>
+		<div id="username_and_datum">
+			<div id="anmelden_div" class="user"> 
+				<div id="anmelden"> Anmelden: </div>
+				<div id="username"> Username </div>
+			</div>
+			<div id="letzte_div" class="user">
+				<div id="letzte"> Letzte Aktivitat:	</div>
+				<div id="datum"> 01.12.2013. </div>
+			</div>
+		</div>
+	</section>
+	
+	<section>
+	<div id="separator">
+	</div>
+	
+	<!-- <div id="buttons">
+		<div id="button_1_div">
+			<button id="button_1">
+				<div>Button1
+				</div>
+			</button>
+		</div>
+		<div id="button_2_div">
+			<button id="button_2">
+				<div>Button2
+				</div>
+			</button>
+		</div>
+		<div id="button_3_div">
+			<button id="button_3">
+				<div>Button3
+				</div>
+			</button>
+		</div>
+	</div> -->
+	
+	<div id="accordion">
+	
+		<div id="header_div_00" class="accordion_header">
+			<h3>Meine Firmeneinträge</h3>
+		</div>
+		<div>
+			<p>Swissclick og, Adresse</p>
+			<p>ID *********</p>
+			<p>Abotyp</p>
+		</div>
+		
+		<div id="header_div_01" class="accordion_header">
+			<h3>Firmenangaben editieren</h3>
+		</div>
+		<div>
+			<p>
+				Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
+				ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
+				amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
+				odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
+			</p>
+		</div>
+		
+		<div id="header_div_02" class="accordion_header">
+			<!-- <div id="separator_h01_h02"></div> -->
+			<h3>News verwalten</h3>
+		</div>
+		<div id="news_verwalten_div">
+			<form name="news_verwalten_form">
+				<div id="news_verwalten_form_div">
+					 <div class="form-element">
+						  <label for="news_title_readonly">Title</label>
+						  <input readonly id="news_title_readonly" type="text" placeholder="News title...">
+					 </div>
+					 <div class="form-element">
+						  <label for="news_text_readonly">Text</label>
+						  <input readonly id="news_text_readonly" style="resize:none" rows="4" cols="50" placeholder="News text..."></input>
+					 </div>
+					 <div class="form-element">
+						  <label for="news_beschreibung_readonly">Beschreibung</label>
+						  <input readonly id="news_beschreibung_readonly" style="resize:none" rows="4" cols="50" placeholder="News beschreibung..."></input>
+					 </div>
+					 <a type="button" style="text-decoration:underline">News editieren</a>​
+					 |
+					 <a type="button" style="text-decoration:underline">News löschen</a>
+				</div>
+		   </form>
+		</div>
+		
+		<div id="header_div_03" class="accordion_header">
+			<!-- <div id="separator_h02_h03"></div> -->
+			<h3>Neue news aufschalten</h3>
+		</div>
+		<div id="news_aufschalten_div">
+			<!-- <form name="news_aufschalten_form"> -->
+				<div id="news_aufschalten_form_div">
+					<div class="form-element">
+						<label for="news_title">Title</label>
+						<input id="news_title" type="text" placeholder="News title...">
+					</div>
+					<div class="form-element">
+						<label for="news_text">Text</label>
+						<textarea id="news_text" rows="4" cols="50" placeholder="News text..."></textarea>
+					</div>
+					<div class="form-element">
+						<label for="news_beschreibung">Beschreibung</label>
+						<textarea id="news_beschreibung" rows="4" cols="50" placeholder="News beschreibung..."></textarea>
+					</div>
+					<div class="label">
+						<label id="bilder">Bilder</label>
+					</div>
+					<div class="picture">
+						<image id="news_picture" width="100%" height="100%" src="images/no-photo.png"></image>
+					</div>
+					<div class="links">
+						<div id="upload_pic_01">
+							<input id="upload" type="file" style="display:none;" />
+							<input type="button" class="button_link" id="upload_link" value="Bilder hochladen" />
+							|
+							<input type="button" class="button_link" value="Bilder loschen"/>
+							<script>
+								$(function(){
+									$("#upload_link").on('click', function(e){
+										if(document.getElementById('upload_pic_02').style.display == "none")
+											document.getElementById('upload_pic_02').style.display = "block";
+										else
+											document.getElementById('upload_pic_02').style.display = "none";
+									});
+								});
+							</script>
+						</div>
+						<div id="upload_pic_02" style="display:none;">
+							<form id="form_upload" action="php/upload01.php" enctype="multipart/form-data" method="post">
+								<label>Dateinamen:</label>
+								<input type="file" id="upload_file" name="upload_file" class="jfilestyle" data-size="300px" data-buttonText="Datei auswählen">
+								<input type="submit"  class="button_link" value="Hochladen"/>
+							</form>
+							
+						</div>
+					</div>
+					<div class="form-element">
+						<label for="laufzeit_von">Laufzeit von</label>
+						<input id="datepicker_von" type="text" placeholder="Datum von...">
+					</div>
+					<div class="form-element">
+						<label for="laufzeit_bis">Laufzeit bis</label>
+						<input id="datepicker_bis" type="text" placeholder="Datum bis...">
+					</div>
+					<div class="form-element">
+						<label for="rubriken">Rubriken</label>
+						<select>
+							<option value="" selected="selected"></option>
+							<option value="1">Rubrik 1</option>
+							<option value="2">Rubrik 2</option>
+							<option value="2">Rubrik 3</option>
+						</select>
+					</div>
+				
+					<div id="news_aufschalten_buttons_div" class="submit">
+						<input type="button" value="Abbrechen" />
+						<input type="button" value="Speichern" />
+					</div>
+				</div>
+			<!-- </form> -->
+		</div>
+	</div>
+	</section>
+	<!-- <form action='php/upload01.php' method='POST' enctype='multipart/form-data'>
+	<input type='file' name='userFile'><br>
+	<input type='submit' name='upload_btn' value='upload'>
+	</form> -->
+	<script type="text/javascript" src="lib/jquery-filestyle/js/jquery-filestyle.min.js"></script>
+</body>
